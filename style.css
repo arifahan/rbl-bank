@@ -4,10 +4,10 @@ body {
 bank-title{
     text-align: center;
 }
-.submit-area {
+.submit-area{
     margin-top: 50px;
     border-radius: 10px;
-    box-shadow: 5px 5px 13px gray;
+    box-shadow: 4px 4px 13px gray;
     padding: 30px;
 }
 #transaction-area {
@@ -27,5 +27,4 @@ bank-title{
     padding: 15px;
     color: #fff;
 }
-
 
