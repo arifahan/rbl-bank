@@ -21,13 +21,49 @@
             <button id="login" class="btn btn-success">Enter Start With 20.5</button>
         </div>
     </div>
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$00</h2>
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$1240</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 dc-area">
+                <h3>Deposit</h3>
+                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="$ Amount you wand to deposit"></textarea>
+                <button class="success">Deposit</button>
+            </div>
+            <div class="col-md-6 dc-area">
+                <h3>Deposit</h3>
+                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="$ Amount you wand to deposit"></textarea>
+                <button class="success">Deposit</button>
+            </div>
+        </div>
+    </div>
     <script>
         const loginArea = document.getElementById('login-area');
         const loginBtn = document.getElementById('login');
         loginBtn.addEventListener('click', function(){
             const loginArea = document.getElementById('login-area').style.display = "none";
-            
+            document.getElementById('transaction-area').style.display = "block";
         })
+        
     </script>
 </body>
 </html>

@@ -10,3 +10,22 @@ bank-title{
     box-shadow: 5px 5px 13px gray;
     padding: 30px;
 }
+#transaction-area {
+    display: none;
+}
+.deposit {
+    background-color: slateblue;
+}
+.withdraw {
+    background-color: lightsalmon;
+}
+.balance {
+    background-color: orange;
+}
+.status {
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+}
+
+
