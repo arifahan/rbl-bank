@@ -72,11 +72,14 @@
         const depositBtn = document.getElementById('addDeposit');
         depositBtn.addEventListener("click", function(){
             const depositNumber = getInputNumber('depositAmount');
-            
-            document.getElementById('depositAmount').value = "";
-
+            if(depositNumber < 0 ){
+                alert("Negative number cannot be deposited");
+            }else{
+                document.getElementById('depositAmount').value = "";
             updateBalance("currentDeposit", depositNumber);
             updateBalance("balance", depositNumber);
+            }
+
         })
 
         // withdraw button even handler----------------
@@ -84,10 +87,15 @@
         withdrawBtn.addEventListener('click', function(){
             const withdrawNumber = getInputNumber("withdrawAmount");
 
-            updateBalance("currentWithdraw", withdrawNumber);
+            if(withdrawNumber < 0 ){
+                alert("Withdrawal number cannot be deposited");
+            }else{
+                updateBalance("currentWithdraw", withdrawNumber);
             updateBalance("balance", -1 * withdrawNumber);
 
             document.getElementById('withdrawAmount').value = "";
+            }
+
         })
 
 
